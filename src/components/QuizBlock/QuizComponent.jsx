@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Radio, Input, Button } from "antd";
 import { CloseOutlined } from "@ant-design/icons";
-import { IconCheck } from "@tabler/icons-react";
 
 const QuizComponent = ({ data, onDataChange, readOnly }) => {
   const [quizData, setQuizData] = useState({
@@ -81,7 +80,7 @@ const QuizComponent = ({ data, onDataChange, readOnly }) => {
 
                 {/* ✅ Show "Correct" beside the correct option after submit */}
                 {readOnly && submitted && index === quizData.correctIndex && (
-                  <h2 className="text-green-600 flex items-center gap-1 ml-3 font-semibold poppins"><IconCheck size={18} /></h2>
+                  <h2 className="text-green-600 flex items-center gap-1 ml-3 font-semibold poppins">Correct</h2>
                 )}
               </div>
             </Radio>

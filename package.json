@@ -47,7 +47,6 @@
     "@editorjs/raw": "^2.5.1",
     "@editorjs/simple-image": "^1.6.0",
     "@editorjs/table": "^2.4.4",
-    "@editorjs/warning": "^1.4.1",
-    "@tabler/icons-react": "^3.31.0"
+    "@editorjs/warning": "^1.4.1"
   }
 }
