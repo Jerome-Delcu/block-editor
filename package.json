@@ -26,8 +26,8 @@
     "rollup-plugin-postcss": "^4.0.2"
   },
   "peerDependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react": "^18.3.1 || ^19.0.0",
+    "react-dom": "^18.3.1 || 19.0.0"
   },
   "dependencies": {
     "@editorjs/checklist": "^1.6.0",
@@ -46,7 +46,7 @@
     "@editorjs/simple-image": "^1.6.0",
     "@editorjs/table": "^2.4.4",
     "@editorjs/warning": "^1.4.1",
-    "antd": "^5.24.3",
+    "antd": "^5.22.2 || 5.24.3",
     "@ant-design/icons": "^5.6.1"
   }
 }
