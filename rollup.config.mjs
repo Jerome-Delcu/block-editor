@@ -39,6 +39,6 @@ export default [
       commonjs(),
       json(),
     ],
-    external: ['react', 'react-dom', 'antd', '@ant-design/icons', '@tabler/icons-react']  // Add this line to treat React and ReactDOM as external
+    external: ['react', 'react-dom', 'antd', '@ant-design/icons']  // Add this line to treat React and ReactDOM as external
   }
 ];
