@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Radio, Input, Button } from "antd";
-import { CloseOutlined } from "@ant-design/icons";
+import { CheckOutlined, CloseOutlined } from "@ant-design/icons";
 
 const QuizComponent = ({ data, onDataChange, readOnly }) => {
   const [quizData, setQuizData] = useState({
@@ -80,7 +80,7 @@ const QuizComponent = ({ data, onDataChange, readOnly }) => {
 
                 {/* ✅ Show "Correct" beside the correct option after submit */}
                 {readOnly && submitted && index === quizData.correctIndex && (
-                  <h2 className="text-green-600 flex items-center gap-1 ml-3 font-semibold poppins">Correct</h2>
+                  <h2 className="text-green-600 flex items-center gap-1 ml-3 font-semibold poppins"><CheckOutlined className="text-sm" /></h2>
                 )}
               </div>
             </Radio>
