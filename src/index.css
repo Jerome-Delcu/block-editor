@@ -4,6 +4,12 @@
     font-family: "Poppins", serif;
 }
 
+/* makes fullscreen bydefault */
+.ce-block__content, 
+.ce-toolbar__content {
+   max-width: none;
+}
+
 .ce-block__content p,
 .ce-block__content ce-paragraph {
     letter-spacing: 0.05em; /* Equivalent to tracking-wider */

@@ -6,7 +6,8 @@ import Code from '@editorjs/code'
 import LinkTool from '@editorjs/link'
 import ImageTool from '@editorjs/image';
 import Raw from '@editorjs/raw'
-import Header from '@editorjs/header'
+import Header from 'editorjs-header-with-alignment'
+import Paragraph  from 'editorjs-paragraph-with-alignment'
 import Quote from '@editorjs/quote'
 import Marker from '@editorjs/marker'
 import CheckList from '@editorjs/checklist'
@@ -30,6 +31,10 @@ export const getEditorJsTools = (imageByFile) => ({
   delimiter: Delimiter,
   inlineCode: InlineCode,
   quiz: QuizBlock,
+  paragraph: {
+    class: Paragraph,
+    inlineToolbar: true,
+  },
   image: {
     class: ImageTool,
     config: {
