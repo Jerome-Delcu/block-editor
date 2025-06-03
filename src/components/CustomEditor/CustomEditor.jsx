@@ -3,7 +3,7 @@ import "../../index.css";
 import EditorJS from "@editorjs/editorjs";
 import { getEditorJsTools } from "../../helper/tool";
 
-const CustomEditor = ({ name, editorRef, readMode, content, imageByFile }) => {
+export const CustomEditor = ({ name, editorRef, readMode, content, imageByFile }) => {
   const [readyToRender, setReadyToRender] = useState(false);
 
   useEffect(() => {
@@ -45,5 +45,3 @@ const CustomEditor = ({ name, editorRef, readMode, content, imageByFile }) => {
 
   return <div id={name} />;
 };
-
-export default CustomEditor;
