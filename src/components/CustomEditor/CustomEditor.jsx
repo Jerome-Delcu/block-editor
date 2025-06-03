@@ -59,7 +59,7 @@ export const CustomEditor = ({ name, editorRef, readMode, content, imageByFile }
         editorRef.current.destroy();
       }
     };
-  }, []);
+  }, [name, content]);
 
   return <div id={name} />;
 };
